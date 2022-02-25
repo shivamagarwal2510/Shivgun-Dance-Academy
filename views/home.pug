@@ -1,0 +1,34 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+  div.content 
+    section#intro 
+        div.container
+            div.large Shivgun Dance Academy
+            div.small Any Body Can Dance
+    section#danceform
+      div
+        h1 Dance Forms
+      div.dance 
+        div.card
+          img(src="../static/Bharatnatyam.jpg", alt="")
+          p Bharatnatyam 
+        div.card  
+          img(src="../static/hip-hop.jpg", alt="")
+          p Hip-hop
+        div.card
+          img(src="../static/weddingSpecial.jpg", alt="")
+          p Wedding Special 
+        div.card
+          img(src="../static/kathak.jpg", alt="") 
+          p Kathak 
+        div.card
+          img(src="../static/bhangra.jpg", alt="")
+          p Bhangra
+  

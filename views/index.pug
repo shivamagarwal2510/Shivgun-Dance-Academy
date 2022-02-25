@@ -1,0 +1,24 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href='/') Home]
+            li #[a(href='/') Class Info]
+            li #[a(href='/') Services]
+            li #[a(href='/') About]
+            li #[a(href='/') Contact us]
+    section#intro 
+        div.container
+            div.large Shivgun Dance Academy
+            div.small Any Body Can Dance
+    section#sponsors 
+        h1 Our Sponsors
+    footer#footer 
+        | This is my footer.             
+    script
+      include ../static/index.js

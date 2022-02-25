@@ -1,0 +1,30 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/responsive.css
+      include ../static/style.css
+      include ../static/styleServices.css
+      
+block content 
+    div.content 
+        h1 Our Services
+        div.card1 
+            img(src="../static/solo.png", alt="")
+            div.cdiv
+                h2 Solo Dance Choreography
+                p We have best coaches for Solo Dance Choreography.
+
+        div.card1 
+            div.cdiv
+                h2 Group Dance Choreography
+                p We have best coaches for Group Dance Choreography.
+            img(src="../static/group.png", alt="")
+        div.card1 
+            img(src="../static/couple.png", alt="")
+            div.cdiv
+                h2 Couple Dance Choreography
+                p We have best coaches for Couple Dance Choreography.
