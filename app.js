@@ -2,7 +2,7 @@ const express=require('express');
 const mongoose =require('mongoose');
 const path=require('path');
 const app=express();
-const port=8000;
+const port= process.env.PORT || 8000;
 //Define mongoose schema
 main().catch(err => console.log(err));
 async function main() {

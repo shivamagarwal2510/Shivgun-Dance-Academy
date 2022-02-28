@@ -13,7 +13,7 @@
 }
 #navbar ul li a{
     text-decoration: none;
-    padding:2px 32px;
+    padding:2px 3vw;
     color:white;
     font-size: 1.2rem;
 
@@ -40,6 +40,7 @@
     background: url('/static/bg.jpg') center center/cover no-repeat;
     z-index:-2;
     text-shadow: 2px 2px black;
+    /* background-size: 100vw auto; */
     /* image-orientation: from-image; */
 }
 .container::before{
@@ -61,7 +62,7 @@
 }
 #danceform{
     background-color: antiquewhite;
-    height:44vh;
+    
     display: flex;
     
     flex-direction: column;
@@ -72,18 +73,24 @@
 }
 .dance{
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 20px;
 }
 .card img{
-    width:15vw;
-    height:12vw;
+    width: 154px;
+    height: 134px;
     border: 1px solid antiquewhite;
     border-radius: 21px;
-    margin: 0px 2vw;
+    margin: 10px 2vw;
 }
 .card p{
     text-align: center;
     font-size: 1.4rem;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding-bottom: 9px;
 }
 #footer{
     background-color: black;
@@ -92,6 +99,13 @@
     text-align: center;
     
 }
+
 .content{
     min-height: calc(100vh - 49px - 8vh);  
+}
+@media screen and (max-width: 587px) {
+    #intro{
+        height:25vh;
+    }
+    
 }
